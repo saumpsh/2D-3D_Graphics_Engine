@@ -1,0 +1,21 @@
+//Allow coordinates to be in the range of LCD resolution
+
+if(*x < 0)
+	{
+		*x = 0;
+	}
+	else
+	{
+		if(*x > ST7735_TFTWIDTH)
+			*x = ST7735_TFTWIDTH;
+	}
+
+	if (*y < 0)
+	{
+		*y = 0;
+	}
+	else
+	{
+		if (*y > ST7735_TFTHEIGHT)
+			*y = ST7735_TFTHEIGHT;
+	}
